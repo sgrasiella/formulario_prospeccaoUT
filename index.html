@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário de Prospecção | Parque Tecnológico</title>
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700;900&display=swap"
+    rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="app-container">
@@ -21,12 +25,12 @@
         <i class="ph ph-cube-transparent" style="font-size: 2.2rem; color: var(--green-primary);"></i>
         <div>
           <h1>Territórios de Minas</h1>
-          <p>Unidade Tecnológica Mariana</p>
+          <p>Unidade Tecnológica Ponte Nova</p>
         </div>
       </div>
       <div class="header-images">
         <img src="imagens/ifmg-vertical.png" alt="Logo IFMG">
-        <img src="imagens/LogoTerritoriosDeMinas.png" alt="Logo Parque Tecnológico">
+        <img src="imagens/Logos - Fundo branco do parque tecnologico.png" alt="Logo Parque Tecnológico">
       </div>
     </header>
 
@@ -49,12 +53,12 @@
     <!-- Form Area -->
     <main class="form-card glass-panel">
       <form id="prospectForm">
-        
+
         <!-- STEP 1: Identificação -->
         <section class="form-step active" id="step-1">
           <h2><i class="ph ph-identification-card"></i> Identificação</h2>
           <p class="section-desc">Por favor, forneça seus dados de contato e vinculação organizacional.</p>
-          
+
           <div class="input-group">
             <label for="nome">Nome completo *</label>
             <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
@@ -78,11 +82,16 @@
             <label>Pré-incubação</label>
             <p class="help-text">Suporte para empreendedores transformarem ideias em negócios.</p>
             <div class="radio-group">
-              <label class="radio-card"><input type="radio" name="preIncubacao" value="Até 10"><span>Até 10</span></label>
-              <label class="radio-card"><input type="radio" name="preIncubacao" value="de 11 a 20"><span>11 a 20</span></label>
-              <label class="radio-card"><input type="radio" name="preIncubacao" value="de 21 a 30"><span>21 a 30</span></label>
-              <label class="radio-card"><input type="radio" name="preIncubacao" value="de 31 a 40"><span>31 a 40</span></label>
-              <label class="radio-card"><input type="radio" name="preIncubacao" value="de 41 a 60"><span>41 a 60</span></label>
+              <label class="radio-card"><input type="radio" name="preIncubacao" value="Até 10"><span>Até
+                  10</span></label>
+              <label class="radio-card"><input type="radio" name="preIncubacao" value="de 11 a 20"><span>11 a
+                  20</span></label>
+              <label class="radio-card"><input type="radio" name="preIncubacao" value="de 21 a 30"><span>21 a
+                  30</span></label>
+              <label class="radio-card"><input type="radio" name="preIncubacao" value="de 31 a 40"><span>31 a
+                  40</span></label>
+              <label class="radio-card"><input type="radio" name="preIncubacao" value="de 41 a 60"><span>41 a
+                  60</span></label>
             </div>
           </div>
 
@@ -91,8 +100,10 @@
             <p class="help-text">Espaço para empresas formalizadas com foco em desenvolvimento.</p>
             <div class="radio-group">
               <label class="radio-card"><input type="radio" name="incubadora" value="Até 10"><span>Até 10</span></label>
-              <label class="radio-card"><input type="radio" name="incubadora" value="de 11 a 20"><span>11 a 20</span></label>
-              <label class="radio-card"><input type="radio" name="incubadora" value="de 21 a 30"><span>21 a 30</span></label>
+              <label class="radio-card"><input type="radio" name="incubadora" value="de 11 a 20"><span>11 a
+                  20</span></label>
+              <label class="radio-card"><input type="radio" name="incubadora" value="de 21 a 30"><span>21 a
+                  30</span></label>
             </div>
           </div>
 
@@ -101,8 +112,10 @@
             <p class="help-text">Espaço para compartilhamento de infraestrutura.</p>
             <div class="radio-group">
               <label class="radio-card"><input type="radio" name="coworking" value="Até 10"><span>Até 10</span></label>
-              <label class="radio-card"><input type="radio" name="coworking" value="de 11 a 20"><span>11 a 20</span></label>
-              <label class="radio-card"><input type="radio" name="coworking" value="de 21 a 30"><span>21 a 30</span></label>
+              <label class="radio-card"><input type="radio" name="coworking" value="de 11 a 20"><span>11 a
+                  20</span></label>
+              <label class="radio-card"><input type="radio" name="coworking" value="de 21 a 30"><span>21 a
+                  30</span></label>
             </div>
           </div>
 
@@ -121,66 +134,94 @@
         <!-- STEP 3: Ambiente Empresarial e CEIA -->
         <section class="form-step" id="step-3">
           <h2><i class="ph ph-buildings"></i> Empresarial e Centros de Excelência</h2>
-          
+
           <div class="question-block">
             <label>Empresas Estabelecidas (Ambiente Empresarial)</label>
             <p class="help-text">Quantidade de empresas já estabelecidas que poderão ser hospedadas.</p>
             <div class="radio-group">
               <label class="radio-card"><input type="radio" name="empresarial" value="Até 5"><span>Até 5</span></label>
-              <label class="radio-card"><input type="radio" name="empresarial" value="de 6 a 10"><span>6 a 10</span></label>
-              <label class="radio-card"><input type="radio" name="empresarial" value="de 11 a 15"><span>11 a 15</span></label>
+              <label class="radio-card"><input type="radio" name="empresarial" value="de 6 a 10"><span>6 a
+                  10</span></label>
+              <label class="radio-card"><input type="radio" name="empresarial" value="de 11 a 15"><span>11 a
+                  15</span></label>
             </div>
           </div>
 
           <div class="question-block">
             <label for="ceia">Temas dos Projetos - CEIA IFMG</label>
-            <p class="help-text">Descreva projetos de pesquisa a serem desenvolvidos no Centro de Excelência em Inteligência Artificial.</p>
-            <textarea id="ceia" name="ceia" rows="3" placeholder="Ex: IA na execução do Plano de Turismo, otimização de serviços..."></textarea>
+            <p class="help-text">Descreva projetos de pesquisa a serem desenvolvidos no Centro de Excelência em
+              Inteligência Artificial.</p>
+            <textarea id="ceia" name="ceia" rows="3"
+              placeholder="Ex: IA na execução do Plano de Turismo, otimização de serviços..."></textarea>
           </div>
 
           <div class="question-block">
             <label for="ceiparte">Temas dos Projetos - CEIPArte</label>
-            <p class="help-text">Projetos de pesquisa para o Centro de Excelência em Inovação em Produtos Artesanais.</p>
-            <textarea id="ceiparte" name="ceiparte" rows="3" placeholder="Ex: Manejo do mofo branco, Queijo Minas Artesanal..."></textarea>
+            <p class="help-text">Projetos de pesquisa para o Centro de Excelência em Inovação em Produtos Artesanais.
+            </p>
+            <textarea id="ceiparte" name="ceiparte" rows="3"
+              placeholder="Ex: Manejo do mofo branco, Queijo Minas Artesanal..."></textarea>
           </div>
         </section>
 
         <!-- STEP 4: Desenvolvimento Organizacional -->
         <section class="form-step" id="step-4">
           <h2><i class="ph ph-graduation-cap"></i> Desenvolvimento Organizacional</h2>
-          
+
           <div class="question-block">
-            <label>Cursos FIC Técnicos Modulares</label>
-            <p class="help-text">Assinale os Cursos FIC (Formação Inicial Continuada) a serem implantados.</p>
-            <div class="checkbox-grid" id="fic-courses">
+            <div class="question-header-row">
+              <label>Cursos Técnicos Modulares com Certificação Intermediária</label>
+              <a href="catalogogerado.pdf" download="Catalogo_Nacional_Cursos_Tecnicos.pdf" class="btn-download-link">
+                <i class="ph ph-file-pdf"></i> Baixar Catálogo Nacional de Cursos Técnicos (PDF)
+              </a>
+            </div>
+            <p class="help-text">Clique nos eixos para ver os cursos e marque as opções de cursos que gostaria que
+              fossem implantadas.</p>
+            <div class="accordion-container" id="fic-accordion">
               <!-- Renderizado via Javascript -->
             </div>
           </div>
 
           <div class="question-block">
-            <label>Modalidade do Curso FIC (Pode marcar mais de uma)</label>
+            <label>Modalidade dos Cursos Técnicos Modulares com Certificação Intermediária (Pode marcar mais de
+              uma)</label>
             <div class="checkbox-grid">
-              <label class="checkbox-card"><input type="checkbox" name="ficMod" value="EAD 100%"><span>EAD 100%</span></label>
-              <label class="checkbox-card"><input type="checkbox" name="ficMod" value="Presencial com 50% EAD"><span>Presencial com 50% EAD</span></label>
-              <label class="checkbox-card"><input type="checkbox" name="ficMod" value="EAD com 20% Presencial"><span>EAD com 20% Presencial</span></label>
+              <label class="checkbox-card"><input type="checkbox" name="ficMod" value="EaD com 50% Presencial"><span>EaD
+                  com 50% Presencial</span></label>
+              <label class="checkbox-card"><input type="checkbox" name="ficMod" value="EAD com 20% Presencial"><span>EAD
+                  com 20% Presencial</span></label>
             </div>
           </div>
 
           <div class="question-block">
-            <label for="ficTemas">Descreva os temas dos cursos FIC</label>
-            <p class="help-text">Especifique áreas do conhecimento focadas na qualificação e atualização.</p>
+            <div class="question-header-row">
+              <label for="ficTemas">Descreva os temas dos cursos FIC</label>
+              <a href="guia_pronatec_de_cursos_fic_2016.pdf" download="Guia_PRONATEC_Cursos_FIC_2016.pdf"
+                class="btn-download-link">
+                <i class="ph ph-file-pdf"></i> Baixar Guia de Cursos FIC (PDF)
+              </a>
+            </div>
+            <p class="help-text">
+              Os cursos FIC (Formação Inicial e Continuada) são capacitações de curta duração voltadas para a
+              qualificação profissional, formação e atualização de trabalhadores. Especifique as áreas de conhecimento
+              desejadas para o atendimento às demandas locais.
+            </p>
             <textarea id="ficTemas" name="ficTemas" rows="2" placeholder="Temas desejados..."></textarea>
           </div>
 
           <div class="question-block">
             <label>Pós-Graduação Lato Sensu</label>
             <div class="checkbox-grid">
-              <label class="checkbox-card"><input type="checkbox" name="posGrad" value="Especialização em Inteligência Artificial"><span>Especialização em IA</span></label>
-              <label class="checkbox-card"><input type="checkbox" name="posGrad" value="Especialização em Docência"><span>Especialização em Docência</span></label>
-              <label class="checkbox-card"><input type="checkbox" name="posGrad" value="Especialização em Formação de Docentes para EAD"><span>Formação de Docentes - EAD</span></label>
+              <label class="checkbox-card"><input type="checkbox" name="posGrad"
+                  value="Especialização em Inteligência Artificial"><span>Especialização em IA</span></label>
+              <label class="checkbox-card"><input type="checkbox" name="posGrad"
+                  value="Especialização em Docência"><span>Especialização em Docência</span></label>
+              <label class="checkbox-card"><input type="checkbox" name="posGrad"
+                  value="Especialização em Formação de Docentes para EAD"><span>Formação de Docentes -
+                  EAD</span></label>
             </div>
           </div>
-          
+
           <div class="question-block">
             <label for="outrasPos">Aponte outros cursos de Pós-Graduação</label>
             <p class="help-text">Para futuro desenvolvimento.</p>
@@ -192,14 +233,15 @@
         <section class="form-step" id="step-5">
           <h2><i class="ph ph-shield-check"></i> Inteligência de Governo (SERPRO)</h2>
           <p class="section-desc">Apoio na modernização da gestão pública municipal via Plataforma SERPRO.</p>
-          
+
           <div class="question-block">
             <label for="serpro">Eixos e soluções pretendidas:</label>
             <p class="help-text">
-              Exemplos de eixos: Mobilidade (Radar, SNE), Tecnologia/Inovação (Avisa BR, Chatbots), 
+              Exemplos de eixos: Mobilidade (Radar, SNE), Tecnologia/Inovação (Avisa BR, Chatbots),
               Segurança (Datavalid, GovShield), Economia (Vendas Gov), Bem-estar Social, Educação/Cultura.
             </p>
-            <textarea id="serpro" name="serpro" rows="6" placeholder="Descreva quais soluções e integrações interessam ao seu contexto..."></textarea>
+            <textarea id="serpro" name="serpro" rows="6"
+              placeholder="Descreva quais soluções e integrações interessam ao seu contexto..."></textarea>
           </div>
         </section>
 
@@ -223,4 +265,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

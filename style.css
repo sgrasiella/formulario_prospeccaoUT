@@ -21,9 +21,12 @@ body {
   font-family: var(--font-body);
   background: var(--bg-light);
   background-image: 
-    radial-gradient(circle at 15% 50%, rgba(39, 158, 62, 0.08), transparent 30%),
-    radial-gradient(circle at 85% 10%, rgba(39, 158, 62, 0.05), transparent 25%),
-    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23279e3e' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    linear-gradient(rgba(244, 247, 246, 0.75), rgba(244, 247, 246, 0.8)), 
+    url("imagens/Ponte Nova-Foto-Ronaldo-Fernandes1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: var(--text-main);
   min-height: 100vh;
   display: flex;
@@ -285,6 +288,105 @@ input:focus, textarea:focus {
   gap: 12px;
 }
 
+/* Accordion Styles */
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.accordion-item {
+  background: var(--input-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-main);
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.accordion-header:hover {
+  background-color: rgba(39, 158, 62, 0.03);
+}
+
+.accordion-header .eixo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.accordion-header .badge {
+  background: rgba(39, 158, 62, 0.1);
+  color: var(--green-dark);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 20px;
+  margin-left: 8px;
+  transition: all 0.3s ease;
+}
+
+.accordion-header i.arrow-icon {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-item.active {
+  border-color: var(--green-primary);
+  box-shadow: 0 4px 15px rgba(39, 158, 62, 0.05);
+}
+
+.accordion-item.active .accordion-header {
+  background-color: rgba(39, 158, 62, 0.05);
+  border-bottom: 1px solid rgba(39, 158, 62, 0.1);
+}
+
+.accordion-item.active .accordion-header i.arrow-icon {
+  transform: rotate(180deg);
+  color: var(--green-primary);
+}
+
+.accordion-item.active .accordion-header .badge,
+.accordion-header .badge.active-badge {
+  background: var(--green-primary);
+  color: #fff;
+}
+
+.accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--bg-panel);
+}
+
+.accordion-content {
+  padding: 20px;
+}
+
+.accordion-content .checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+}
+
 /* Buttons */
 .form-navigation {
   display: flex;
@@ -331,6 +433,39 @@ input:focus, textarea:focus {
   background: var(--green-dark);
   box-shadow: 0 8px 25px rgba(39, 158, 62, 0.4);
   transform: translateY(-2px);
+}
+.question-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.question-header-row label {
+  margin-bottom: 0;
+}
+
+.btn-download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--green-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  background: rgba(39, 158, 62, 0.08);
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-family: var(--font-heading);
+}
+
+.btn-download-link:hover {
+  background: var(--green-primary);
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 @media (max-width: 768px) {
